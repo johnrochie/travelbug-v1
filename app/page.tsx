@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Plane, Star, Sparkles, Bug } from 'lucide-react';
+import { Mail, Phone, MapPin, Plane, Star, Sparkles } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -6,12 +6,11 @@ export default function Home() {
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-sm z-50">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-          <div className="flex items-center gap-2 text-2xl font-bold text-[#2d1f2f] tracking-tight">
-            <div className="flex items-center gap-1">
-              <Bug className="w-8 h-8 text-[#e91e63]" />
-              <span>Travel</span>
+          <div className="flex items-center gap-3">
+            <img src="/logo.jpg" alt="Travel Bug" className="h-12 w-12 object-contain" />
+            <div className="text-2xl font-bold text-[#2d1f2f] tracking-tight">
+              <span>Travel</span> <span className="text-[#e91e63]">Bug</span>
             </div>
-            <span className="text-[#e91e63]">Bug</span>
           </div>
           <div className="hidden md:flex space-x-8">
             <a href="#about" className="text-[#2d1f2f] hover:text-[#e91e63] transition-colors font-medium">
@@ -65,10 +64,10 @@ export default function Home() {
           <Star size={100} />
         </div>
         <div className="absolute top-1/4 right-20 text-white/15 animate-bounce" style={{ animationDuration: '3s' }}>
-          <Bug size={60} />
+          <Sparkles size={60} />
         </div>
         <div className="absolute bottom-1/4 left-20 text-white/10 animate-pulse">
-          <Bug size={40} style={{ transform: 'rotate(15deg)' }} />
+          <Plane size={40} style={{ transform: 'rotate(15deg)' }} />
         </div>
       </section>
 
@@ -330,9 +329,11 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-gradient-to-br from-[#2d1f2f] to-[#1a1a2e] text-white py-8">
         <div className="max-w-6xl mx-auto px-6 text-center">
-          <div className="flex items-center justify-center gap-2 text-2xl font-bold mb-4">
-            <Bug className="w-8 h-8 text-[#e91e63]" />
-            <span>Travel <span className="text-[#e91e63]">Bug</span></span>
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <img src="/logo.jpg" alt="Travel Bug" className="h-10 w-10 object-contain" />
+            <div className="text-2xl font-bold">
+              <span>Travel</span> <span className="text-[#e91e63]">Bug</span>
+            </div>
           </div>
           <p className="text-gray-400 mb-4">Independent Travel Advisor with InteleTravel</p>
           <p className="text-gray-500 text-sm">© 2026 Travel Bug. All rights reserved.</p>
